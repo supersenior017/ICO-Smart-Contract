@@ -1,0 +1,22 @@
+{
+  "name": "tyrese_ico-smart-contract",
+  "version": "1.0.0",
+  "description": "This is a Solidity project that implements a simple ERC20 token.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy.js --network bsc_testnet",
+    "test": "npx hardhat test --network bsc_testnet"
+  },
+  "author": "Tyrese",
+  "license": "MIT",
+  "dependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.4.5",
+    "@openzeppelin/contracts": "^4.3.2"
+  },
+  "devDependencies": {
+    "hardhat": "^2.6.4"
+  }
+}
