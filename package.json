@@ -4,8 +4,10 @@
   "description": "This is a Solidity project that implements a simple ERC20 token.",
   "main": "index.js",
   "scripts": {
-    "deploy": "npx hardhat run scripts/deploy.js --network bsc_testnet",
-    "test": "npx hardhat test --watch --network bsc_testnet"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "hardhat run scripts/deploy.js --network bsc_testnet",
+    "test": "hardhat test --watch --network bsc_testnet"
   },
   "author": "Tyrese",
   "license": "MIT",
@@ -14,9 +16,43 @@
     "chai": "^4.3.4",
     "dotenv": "^10.0.0",
     "ethers": "^5.4.5",
-    "@openzeppelin/contracts": "^4.3.2"
+    "@openzeppelin/contracts": "^4.3.2",
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.3",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "@mui/x-date-pickers": "^6.3.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.62.1",
+    "styled-components": "^5.3.10",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "hardhat": "^2.6.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
