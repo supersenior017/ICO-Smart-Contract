@@ -8,8 +8,8 @@
     "build": "react-scripts build",
     "deploy": "npx hardhat run scripts/deploy.js --network bsc_testnet --config hardhat.config.js",
     "deploy:localhost": "npx hardhat run scripts/deploy.localhost.js --network localhost --config hardhat.localhost.js",
-    "test": "npx hardhat test --watch --network bsc_testnet --config hardhat.config.js",
-    "test:localhost": "npx hardhat test --watch --network localhost --config hardhat.localhost.js",
+    "test": "npx hardhat test --network bsc_testnet --config hardhat.config.js",
+    "test:localhost": "npx hardhat test --network localhost --config hardhat.config.localhost.js",
     "node:localhost": "npx hardhat node"
   },
   "author": "Tyrese",
