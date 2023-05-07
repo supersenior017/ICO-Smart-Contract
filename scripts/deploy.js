@@ -1,10 +1,12 @@
+const { ethers } = require('ethers');
+
 async function main() {
-    const MyContract = await ethers.getContractFactory("MyContract");
-    const myContract = await MyContract.deploy();
-    await myContract.deployed();
-    console.log("MyContract deployed to:", myContract.address);
+    const ICO = await ethers.getContractFactory('ICO');
+    const ico = await ICO.deploy();
+    await ico.deployed();
+    console.log('ICO deployed to:', ico.address);
 }
-  
+
 main()
     .then(() => process.exit(0))
     .catch((error) => {
