@@ -34,7 +34,7 @@ const displayTime = () => {
     let now = new Date();
     let years = now.getFullYear();
     let months = now.getMonth() + 1;
-    let days = now.getDay();
+    let days = now.getDate();
     let dateString = years + '/' + months + '/' + days;
     let hours = now.getHours();
     let minutes = now.getMinutes();
@@ -108,9 +108,10 @@ const Initialco = () => {
     }
     return (
         <div>
+            <ThemeProvider theme={darkTheme}>
             <Grid container>
                 <Grid xs={12}>
-                    <AppBar position="static" color="inherit" className='header' title="Smart Contract">Smart Contract
+                    <AppBar position="static" className='header' title="Smart Contract">Smart Contract
                     </AppBar>
                 </Grid>
                 <Grid xs={7}>
@@ -124,7 +125,6 @@ const Initialco = () => {
             <Container >
                 <Box sx={{
                     border: '1px solid gray',
-                    boxShadow: ' 10px 10px 10px #fff, 10px 10px 0 gray',
                     borderRadius: '5px',
                     paddingTop:"3%",
                     paddingBottom:'5%',
@@ -136,9 +136,9 @@ const Initialco = () => {
                             <div style={{ padding: '5%' }}>
                                 <TextField
                                     id="outlined-number"
-                                    label="Deposited Amount"
+                                    label="Deposit Amount"
                                     type="number"
-                                    color="info"
+
                                     InputLabelProps={{
                                         shrink: true,
                                     }}
@@ -176,6 +176,7 @@ const Initialco = () => {
 
                 </Box>
             </Container>
+            </ThemeProvider>
         </div >
 
 

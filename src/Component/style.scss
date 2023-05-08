@@ -2,24 +2,43 @@
     padding: 10px 10px 2px;
     font-size: 50pt;
     font-weight: 900;
+    background-color: transparent;
 }
 
 #date {
+    color: bisque;
     font-size: 32pt;
 }
 
 #time {
     margin-left:5%;
     font-size: 32pt;
+    color: bisque;
 }
 
 #connect-button {
     margin: 3%;
     font-size: 16pt;
-    
+    color: bisque;
 }
 .description{
     margin-top: 10%;
-    color:grey;
+    color: bisque;
     font-size: larger;
+}
+
+body {
+    background-image: url("/smart-contract-development-bg-1920.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 158%;
+    position: relative;
+    color: bisque;
+    }
+
+.AppBar {
+    background-color: transparent;
+    }
+
+label {
+        color: #ffffff;
 }
