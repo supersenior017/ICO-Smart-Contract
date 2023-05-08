@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AppBar, IconButton, Button, Container, Grid, Box, TextField, LinearProgress, Typography, linearProgressClasses, CircularProgress } from '@mui/material';
 import { orange } from '@mui/material/colors';
 import { ThemeProvider, createTheme, styled } from '@mui/material/styles';
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import WalletIcon from '@mui/icons-material/Wallet';
 import PropTypes from 'prop-types';
 import './style.scss';
 
@@ -19,7 +19,7 @@ const darkTheme = createTheme({
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     height: 20,
-    borderRadius: 5,
+    borderRadius: 10,
     [`&.${linearProgressClasses.colorPrimary}`]: {
         backgroundColor: theme.palette.grey[theme.palette.mode === 'light' ? 200 : 800],
     },
@@ -118,7 +118,7 @@ const Initialco = () => {
                     <span id='time'></span>
                 </Grid>
                 <Grid xs={5}>
-                    <Button secondary color="success" id="connect-button" > <AddShoppingCartIcon />  Wallet Connect</Button>
+                    <Button secondary color="success" id="connect-button" > <WalletIcon />  Wallet Connect</Button>
                 </Grid>
             </Grid>
             <Container >
@@ -128,7 +128,7 @@ const Initialco = () => {
                     borderRadius: '5px',
                     paddingTop:"3%",
                     paddingBottom:'5%',
-                    marginTop:"5%"
+                    marginTop:"10%"
                     
                 }}>
                     <Grid container >
@@ -136,7 +136,7 @@ const Initialco = () => {
                             <div style={{ padding: '5%' }}>
                                 <TextField
                                     id="outlined-number"
-                                    label="Deposited Amount Number"
+                                    label="Deposited Amount"
                                     type="number"
                                     color="info"
                                     InputLabelProps={{
@@ -146,7 +146,7 @@ const Initialco = () => {
                                 /></div>
                         </Grid>
                         <Grid xs={2}>
-                            <div className='description'>total amount: {<span style={{ fontWeight: 700, fontSize: '18pt' }}>{amount}</span>}</div>
+                            <div className='description'>Total Deposit: {<span style={{ fontWeight: 700, fontSize: '18pt' }}>{amount}</span>}</div>
                         </Grid>
                         <Grid xs={5}></Grid>
                         <Grid xs={2}>
